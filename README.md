@@ -51,10 +51,10 @@ Inspect Deployment's YAML file:
 kubectl get deployment synergychat-web -o yaml
 ```
 
-Apply changes in deployment file with:
+Apply changes in deployment or configmap file with:
 
 ```bash
-kubectl apply -f web-deployment.yaml
+kubectl apply -f FILENAME
 ```
 
 
