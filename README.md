@@ -57,9 +57,31 @@ Apply changes in deployment or configmap file with:
 kubectl apply -f FILENAME
 ```
 
+Enable ingress in minikube:
 
+```bash
+minikube addons enable ingress
+```
 
+Forward ingress to localmachine:
 
+```bash
+minikube tunnel -c
+```
+
+# Namespaces
+
+Get namespaces:
+
+```bash
+kubectl get ns
+```
+
+Create namespaces:
+
+```bash
+kubectl create ns NS_name
+```
 
 
 
