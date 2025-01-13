@@ -49,6 +49,7 @@ Inspect Deployment's YAML file:
 
 ```bash
 kubectl get deployment synergychat-web -o yaml
+kubectl describe pod PODNAME
 ```
 
 Apply changes in deployment or configmap file with:
@@ -61,6 +62,12 @@ Enable ingress in minikube:
 
 ```bash
 minikube addons enable ingress
+```
+
+Enable metrics in minikube:
+
+```bash
+minikube addons enable metrics-server
 ```
 
 Forward ingress to localmachine:
@@ -82,6 +89,7 @@ Create namespaces:
 ```bash
 kubectl create ns NS_name
 ```
+
 
 
 
